@@ -17,6 +17,7 @@
   "dependencies": {
     "aws-sdk": "^2.639.0",
     "axios": "^0.21.0",
-    "mongodb": "^3.6.3"
+    "mongodb": "^3.6.3",
+    "uuid": "^8.3.1"
   }
 }
