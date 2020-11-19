@@ -10,7 +10,7 @@ async function placeBid(event, context) {
   const auction = await getAuctionById(id); 
 
   if (amount <= auction.highestBid.amount) {
-    throw new Error(
+    throw new createError.Forbidden(
       `Your Bid Must Be Greater Than ${auction.highestBid.amount}`
     );
   }
